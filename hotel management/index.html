@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurant Hotel Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🍽️ Royal Taste Restaurant</h1>
+  </header>
+
+  <section id="menu">
+    <h2>Menu</h2>
+
+    <div class="item">
+      <img src="images/aa.jpeg" alt="Biryani">
+      <div>
+        <h3>Biryani</h3>
+        <p>₹150</p>
+        <button onclick="addToOrder('Biryani', 150)">Add</button>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/bb.jpeg" alt="Paneer">
+      <div>
+        <h3>Paneer Butter Masala</h3>
+        <p>₹120</p>
+        <button onclick="addToOrder('Paneer Butter Masala', 120)">Add</button>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/cc.jpeg" alt="Butter Naan">
+      <div>
+        <h3>Butter Naan</h3>
+        <p>₹30</p>
+        <button onclick="addToOrder('Butter Naan', 30)">Add</button>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/dd.jpeg" alt="Cold Drink">
+      <div>
+        <h3>Cold Drink</h3>
+        <p>₹40</p>
+        <button onclick="addToOrder('Cold Drink', 40)">Add</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="order-summary">
+    <h2>Your Order</h2>
+    <ul id="order-list"></ul>
+    <p><strong>Total:</strong> ₹<span id="total">0</span></p>
+    <button onclick="placeOrder()">Place Order</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Royal Taste Restaurant</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
